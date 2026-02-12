@@ -5,6 +5,8 @@ import { connectionDB } from "./config/database.js";
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+
+app.
 const startServer = async () => {
     await connectionDB();
 
