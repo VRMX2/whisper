@@ -136,13 +136,23 @@ const AuthScreen = () => {
           </View>
 
           {/* Terms and Privacy */}
-          <View className="mt-8 px-6">
-            <Text className="text-subtle-foreground text-xs text-center leading-5">
-              By continuing, you agree to our{" "}
-              <Text className="text-primary underline">Terms of Service</Text> and{" "}
-              <Text className="text-primary underline">Privacy Policy</Text>
-            </Text>
-          </View>
+         <View className="mt-8 px-6 items-center">
+  <Text
+    className="text-subtle-foreground text-xs text-center"
+    numberOfLines={1}
+    ellipsizeMode="tail"
+  >
+    By continuing, you agree to our{" "}
+    <Text className="text-primary underline">
+      Terms of Service
+    </Text>{" "}
+    and{" "}
+    <Text className="text-primary underline">
+      Privacy Policy
+    </Text>
+  </Text>
+</View>
+
         </View>
       </SafeAreaView>
     </View>
